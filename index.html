@@ -1,37 +1,47 @@
 <!doctype html>
-<html lang="fr">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>For Stacy</title>
-  <meta name="description" content="A small page, no pressure. Just a playlist." />
+  <meta name="description" content="For Stacy." />
 
   <style>
     :root{
-      --bg:#0b0b10;
+      --bg:#1a0407;          /* deep red */
+      --bg2:#2a070c;         /* lighter red */
       --card:rgba(255,255,255,.06);
       --border:rgba(255,255,255,.12);
       --text:#f2f2f7;
       --muted:rgba(242,242,247,.72);
       --small:rgba(242,242,247,.60);
     }
+
     body{
       margin:0;
-      background:radial-gradient(1200px 800px at 20% 0%, rgba(255,255,255,.06), transparent 55%),
-                 radial-gradient(900px 700px at 90% 20%, rgba(255,255,255,.05), transparent 60%),
-                 var(--bg);
+      background:
+        radial-gradient(1200px 800px at 20% 0%, rgba(255,255,255,.06), transparent 55%),
+        radial-gradient(900px 700px at 90% 20%, rgba(255,255,255,.05), transparent 60%),
+        radial-gradient(900px 700px at 50% 100%, rgba(255,255,255,.04), transparent 60%),
+        linear-gradient(180deg, var(--bg2), var(--bg));
       color:var(--text);
       font-family: system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
     }
+
     .wrap{max-width:820px;margin:0 auto;padding:46px 18px 70px;}
     .top{display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;}
     .badge{
       font-size:12px; letter-spacing:.12em; text-transform:uppercase;
-      color:var(--muted); border:1px solid var(--border);
-      padding:8px 10px; border-radius:999px; background:rgba(255,255,255,.03);
+      color:var(--muted);
+      border:1px solid var(--border);
+      padding:8px 10px;
+      border-radius:999px;
+      background:rgba(255,255,255,.03);
     }
+
     h1{font-size:30px;margin:12px 0 6px;}
     .subtitle{color:var(--muted); margin:0 0 22px; line-height:1.6;}
+
     .card{
       background:var(--card);
       border:1px solid var(--border);
@@ -40,13 +50,11 @@
       margin:14px 0;
       backdrop-filter: blur(10px);
     }
+
     h2{font-size:16px;margin:0 0 10px; color:rgba(242,242,247,.92);}
     p{margin:10px 0; line-height:1.7;}
     .muted{color:var(--muted);}
     .small{color:var(--small); font-size:13px; line-height:1.6;}
-    .divider{height:1px;background:rgba(255,255,255,.10);margin:14px 0;}
-    .footer{margin-top:26px;color:var(--small);font-size:12px;}
-    .heart{opacity:.75}
 
     .btn{
       display:inline-block;
@@ -58,9 +66,9 @@
       text-decoration:none;
       font-weight:600;
     }
-    .btn:hover{
-      background:rgba(255,255,255,.10);
-    }
+    .btn:hover{ background:rgba(255,255,255,.10); }
+
+    .footer{margin-top:26px;color:var(--small);font-size:12px;}
   </style>
 </head>
 
@@ -73,19 +81,17 @@
 
     <h1>Stacy</h1>
     <p class="subtitle">
-      Une petite page, juste pour toi. <span class="heart">♡</span><br/>
-      A small page, just for you.
+      Just a small playlist for you.
     </p>
 
     <section class="card">
       <h2>Playlist</h2>
       <p class="muted">
-        Les premières lettres des titres disent : <strong>FOR STACY</strong>.<br/>
-        The first letters spell: <strong>FOR STACY</strong>.
+        The first letters spell <strong>FOR STACY</strong>.
       </p>
 
       <!-- Spotify -->
-      <iframe data-testid="embed-iframe" style="border-radius:12px"
+      <iframe style="border-radius:12px"
         src="https://open.spotify.com/embed/playlist/6Rbf5uH3DjXnBIZVZVRA4O?utm_source=generator"
         width="100%" height="352" frameBorder="0"
         allowfullscreen=""
@@ -96,35 +102,25 @@
 
       <!-- Apple Music -->
       <a class="btn" href="https://music.apple.com/ca/playlist/f-o-r-s-t-a-c-y/pl.u-kv9lbXLCJx2vJjG" target="_blank" rel="noopener">
-        Open the playlist in Apple Music
+        Open in Apple Music
       </a>
 
       <p class="small" style="margin-top:12px;">
-        pour Stacy Ellen
+        No need to reply.
       </p>
     </section>
 
     <section class="card">
-      <h2>Message</h2>
-
-      <p>
-        <strong>FR</strong><br/>
-        Stacy, je t’ai fait une playlist.
-        C’est juste une attention, pour ton coeur.
-      </p>
-
-      <div class="divider"></div>
-
-      <p>
-        <strong>EN</strong><br/>
-        Stacy, I made you a playlist.
-        Just something for your heart.
+      <h2>One thing</h2>
+      <p class="muted">
+        I’m sorry for what I did.
       </p>
     </section>
 
     <div class="footer">
-      Made with care.
+      Made with care. No tracking.
     </div>
   </main>
 </body>
 </html>
+
